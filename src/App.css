@@ -1,0 +1,87 @@
+.wrapper {
+  text-align: center;
+  display: flex;
+  width: 600px;
+  height: 800px;
+  position: relative;
+  flex-direction: column;
+  margin: auto;
+}
+/* nav styling */
+.nav-wrapper {
+  text-align: center;
+  display: flex;
+  background-color: lightblue;
+  width: 600px;
+  height: 100px;
+  position: relative;
+  display: flex;
+  flex-direction: row;
+}
+/* main sliding component styling */
+.main-wrapper {
+  background-color: lightpink;
+  height: 600px;
+  width: 600px;
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  text-align: center;
+  overflow: hidden;
+}
+
+.collection-wrapper {
+  background-color: lightblue;
+  width: 400px;
+  height: 400px;
+  display: flex;
+  position: relative;
+  margin: auto;
+  text-align: center;
+  overflow: hidden;
+  align-self: flex-end;
+  /* flex: 0 0 300px; */
+
+}
+
+#wrapper1 {
+  width: 500px;  
+  min-width: 500px;
+  position: relative;
+  overflow: hidden;
+  margin-left: 20px;
+}
+
+#wrapper2 {
+  width: 500px;
+  min-width: 500px;
+  position: relative;
+  margin-right: 20px;
+  margin-left: 20px;
+  overflow: hidden;
+}
+
+#wrapper3 {
+  width: 500px;
+  min-width: 500px;
+  margin-right: 20px;
+  position: relative;
+  overflow: hidden;
+}
+
+/* #selected-collection-img {
+  width: 500px;
+} */
+
+
+/* footer styling */
+.footer-wrapper {
+  background-color: lightblue;
+  height: 100px;
+  width: 600px;
+  position: relative;
+  flex-direction: row;
+  text-align: center;
+  display: flex;
+}
+
