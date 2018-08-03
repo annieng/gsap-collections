@@ -78,6 +78,25 @@ class App extends Component {
   }
 
   toggleChild = () => {
+    const tlc = new TimelineLite()
+    tlc.
+      to('#wrapper2', 0.5, {
+        x: 0, 
+        minWidth: '600px', 
+        width: '600px',
+        height: '400px',
+        minHeight: '400px',
+        position: 'absolute',
+        margin: '0',
+        top: '0',
+        backgrounColor: '#FFFFFF',
+        overflow: 'visible'
+      })
+      .to('.nav-wrapper', 0.5, {x: '-1000'}, -0.5)
+      .to('.main-wrapper', 0.5, {height: '800px', minHeight: '800px', backgroundColor: 'black'}, -0.5)
+      .to('.footer-wrapper', 0.5, {x: '+1000'}, -0.5)
+      .to('#wrapper1', 0.5, {x: '-1000'}, -0.5)
+      .to('#wrapper4', 0.5, {x: '-1000'}, -0.5)
     const { isChildVisible } = this.state;
     this.setState({ isChildVisible: !isChildVisible });
   }
@@ -98,7 +117,7 @@ class App extends Component {
         <div className='main-wrapper'>
 
           <div className='collection-wrapper' id='wrapper1' onClick={this.toggleChild}>
-            <img src='' alt='test' id='selected-collection-img' />
+            <img src='' alt='test' id='selected-collection-img1' />
             <div id='selected-collection-info'>
                 <h5 onClick={this.toggleChild}> collection-1 </h5>}
             </div>
@@ -106,7 +125,7 @@ class App extends Component {
           </div>
 
           <div className='collection-wrapper' id='wrapper2' onClick={this.toggleChild}>
-            <img src='' alt='test' id='selected-collection-img' />
+            <img src='' alt='test' id='selected-collection-img2' />
             <div id='selected-collection-info'>
                 <h5 onClick={this.toggleChild}> collection1 </h5>
             </div>
@@ -114,7 +133,7 @@ class App extends Component {
           </div>
 
           <div className='collection-wrapper' id='wrapper3' onClick={this.toggleChild}>
-            <img src='' alt='test' id='selected-collection-img' />
+            <img src='' alt='test' id='selected-collection-img3' />
             <div id='selected-collection-info'>
                 <h5 onClick={this.toggleChild}> collection2 </h5>
             </div>

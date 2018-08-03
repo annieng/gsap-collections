@@ -9,7 +9,7 @@ const duration = 5000;
 
 const defaultStyle = {
   opacity: 0,
-  transform: "translate(300px, 0)"
+  transform: "translate(400px, 0)"
 };
 
 const transitionStyles = {
@@ -33,18 +33,18 @@ class Playlists extends Component {
           if (this.props.in) {
             TweenLite.to(n, 1, {
               autoAlpha: 1,
-              x: 0,
+              x: -20,
               ease: Back.easeOut,
               onComplete: done
             });
           } else {
-            TweenLite.to(n, 1, { autoAlpha: 0, x: -100, onComplete: done });
+            TweenLite.to(n, 1, { autoAlpha: 0, x: -200, onComplete: done });
           }
         }}
       >
-        <div className="card" style={{ marginTop: "10px", ...defaultStyle }}>
-          <div className="card-block">
-            <h1 className="text-center">FADE IN/OUT COMPONENT</h1>
+        <div className="playlists-wrapper" style={{ ...defaultStyle }}>
+          <div className="single-playlist">
+            <h1 className="playlist-title">FADE IN/OUT COMPONENT</h1>
           </div>
         </div>
       </Transition>

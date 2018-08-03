@@ -85,3 +85,13 @@
   display: flex;
 }
 
+/* fade in component styling */
+
+.playlists-wrapper {
+  height: 500px;
+  width: 400px;
+  min-width: 400px;
+  text-align: center;
+  background-color: lightyellow;
+  /* align-self: center; */
+}
