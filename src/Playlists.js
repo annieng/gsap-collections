@@ -21,6 +21,9 @@ const transitionStyles = {
 class Playlists extends Component {
   constructor(props){
     super(props)
+    this.state = {
+      playlists: []
+    }
   }
   render(){
     return(
@@ -33,7 +36,8 @@ class Playlists extends Component {
           if (this.props.in) {
             TweenLite.to(n, 1, {
               autoAlpha: 1,
-              x: -20,
+              x: 0,
+              y: 100,
               ease: Back.easeOut,
               onComplete: done
             });
@@ -42,7 +46,22 @@ class Playlists extends Component {
           }
         }}
       >
+
+      {/* 
+      need to map objects corresponding to this.props.selectedCollection and return
+      only those playlists that correspond to that collection
+      
+      this.props.collectionArray[selectedCollection].playlists.map((e, i))
+
+
+      */}
         <div className="playlists-wrapper" style={{ ...defaultStyle }}>
+          <div className="single-playlist">
+            <h1 className="playlist-title">FADE IN/OUT COMPONENT</h1>
+          </div>
+          <div className="single-playlist">
+            <h1 className="playlist-title">FADE IN/OUT COMPONENT</h1>
+          </div>
           <div className="single-playlist">
             <h1 className="playlist-title">FADE IN/OUT COMPONENT</h1>
           </div>

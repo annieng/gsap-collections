@@ -32,3 +32,8 @@ animate elements
 - icon
 - replace text
 - adding elements within child (own icons/images + names)
+
+// things to improve
+- better data structures
+- using state to track selected collections/playlists for animation 
+- animation toggleChild should only affect the clicked collection - separate components for each collection's playlists would be a way to achieve this
